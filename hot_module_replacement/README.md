@@ -5,7 +5,7 @@
 - Code Splitting
 - Webpack Dev Server
 
-![HMR](/assets/images/HMR.svg)
+![HMR](/assets/images/HMR.svg?raw=true)
 
 
 ## References
