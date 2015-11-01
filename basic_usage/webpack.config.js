@@ -1,6 +1,7 @@
 var path = require('path');
 var webpack = require('webpack');
 var autoprefixer = require('autoprefixer');
+var postcssImport = require('postcss-import');
 var precss = require('precss');
 
 module.exports = {
@@ -26,6 +27,6 @@ module.exports = {
     }]
   },
   postcss: function () {
-    return [autoprefixer, precss];
+    return [autoprefixer, postcssImport, precss];
   }
 }
