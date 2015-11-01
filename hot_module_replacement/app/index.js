@@ -1,16 +1,11 @@
 import './styles.styl';
-import React from 'react';
-import { render } from 'react-dom';
-import App from './App';
+let logTest = require('./module01');
 
-render(
-  <App />,
-  document.getElementById('root')
-);
+logTest['default']();
 
 if (module.hot) {
-
-  module.hot.status((status) => {
-    console.log(`New Status: ${status}`);
+  module.hot.accept('./module01', () => {
+    logTest = require('./module01');
+    logTest['default']();
   });
 }
