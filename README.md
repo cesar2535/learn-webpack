@@ -9,6 +9,7 @@
 ## Features
 - [Basic Usage](/basic_usage)
 - [Code Splitting](/code_splitting)
+- [Hot Module Replacement](/hot_module_replacement)
 
 ## More examples
 [Github: webpack/examples](https://github.com/webpack/webpack/tree/master/examples)
